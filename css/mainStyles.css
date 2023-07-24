@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap');
+
+:root {
+    --backgroundDark: #252529;
+    --colorCards: #313136;
+    --colorButton: #1e1e20;
+    --darkGray: #2c2c30;
+    --lightGary: #3a3a3c;
+    --letters: #fefeff;
+    --borderCard: #3838c9;
+
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--letters);
+    font-family: 'Jost', 'Roboto', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background: var(--backgroundDark);
+    position: relative;
+    display: inline-block;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+/*mini logo*/
+.logo-container {
+    background-color: transparent;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 30;
+    margin: 1rem;
+    border: none;
+}
+.logo-container img {
+    width: 60px;
+    height: 50px;
+    position: relative;
+    border-radius: 100%;
+}
+
+main {
+    min-height: 250vh;
+    display: inline-block;
+}
+
+.secondSection {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 5rem 0 7rem;
+}
+/*apis*/
+.apiCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    border: 4px solid #2b2b7e;
+    width: 350px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 1rem;
+    box-shadow: 0px 6px 20px rgba(228, 220, 220, 0.2); 
+    padding: 2rem; 
+}
+
+.apiCard::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(8, 5, 48, 0.1);
+    background-size: cover; 
+    z-index: 10;
+}
+
+.apiCard * {
+    position: relative;
+    z-index: 2; 
+}
+#dolar, #euro, #clima {
+    color: #fefeff;
+    font-size: 1rem;
+    background-size: cover; 
+    background-position: center; 
+    position: relative; 
+}
+#dolar {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url('../media-resourses/dolares.jpg'); 
+}
+
+#euro {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url('../media-resourses/euros.jpeg'); 
+}
+
+#clima {
+    background-image: linear-gradient(rgba(5, 7, 12, 0.22), rgba(5, 7, 12, 0.20)), url(https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG51YmVzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60); 
+}
+
+/*cards section*/
+.card-container {
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    position: relative;
+}
+
+/*tarjetas de noticias*/
+.card {
+    height: 300px;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+    background-color: var(--colorCards);
+    border-radius: 1rem;
+    background-size: cover;
+    transition: all .3s ease-out;
+}
+
+.card__title {
+    width: 90%;
+    max-height: 100px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 10px auto;
+    padding: 1rem;
+    text-align: center;
+}
+.card__details {
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 19px;
+    margin: 5px;
+    max-height: 150px;
+    overflow: hidden;
+}
+.card__btn {
+    background-color: transparent;
+    box-shadow: 3px 4px 3px rgba(0, 0, 0), -6px -3px 3px rgba(0, 0, 0, 0.33);
+    width: 150px;
+    height: 30px;
+    margin: auto 1rem;
+    border-radius: 20rem;
+    top: 20px;
+
+    display: grid;
+    place-content: center;
+
+    text-align: center;
+    position: relative;
+    left: 120px;
+}
+.card__btn a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--letters);
+}
+.card__btn a:hover {
+    color: #3838c9;
+}
+.card:hover {
+    border: 1px solid var(--borderCard);
+}

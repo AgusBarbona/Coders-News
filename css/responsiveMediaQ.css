@@ -1,0 +1,56 @@
+@media only screen and (max-width: 300px) {
+    .secondSection {
+        flex-direction: column;
+        margin-left: 30px;
+    }
+    .apiCard {
+        width: 150px;
+    }
+}
+
+
+/*cards news mediaQ*/
+@media only screen and (max-width: 480px) {
+    .card {
+        width: 280px;
+        height: 320px;
+    }
+    .card__title {
+        font-size: 1rem;
+        margin-top: 0px;
+        margin-bottom: 1rem;
+    }
+    .card__details {
+        font-size: .9rem;
+    }
+    .card__btn {    
+        height: fit-content;
+        width: auto;
+        left: 0;
+        top: 1rem;
+    }
+    
+}
+@media only screen and (max-width: 270px) {
+    .card {
+        width: 150px;
+        height: 400px;
+    }
+    .card__title {
+        font-size: .8rem;
+        height: fit-content;
+    }
+    .card__details {
+        margin-top: 3rem;
+        font-size: .6rem;
+    }
+    .card__btn {    
+        height: fit-content;
+        width: auto;
+        left: 0;
+        top: 2rem;
+    }
+    .card__btn a {
+        font-size: 12px;
+    }
+}
