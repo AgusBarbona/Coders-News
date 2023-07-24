@@ -47,8 +47,8 @@ body {
     align-items: center;
     text-align: center;
     padding: 6% 0px 20% 0px;
-    margin-top: 10px; /* Este margen previene la superposición con la barra de navegación */
-    margin-bottom: 20px; /* Este margen previene la superposición con el footer */
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .bloqueBlanco {
@@ -59,7 +59,7 @@ body {
     background-color: #E9EEFA;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Cambia esto */
+    align-items: flex-start;
     padding: 1em; 
 }
 
@@ -91,8 +91,8 @@ button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Esto garantiza que el elemento ocupe todo el ancho disponible */
-    margin-top: 70px; /* Esto añade un margen superior para dejar espacio al botón */
+    width: 100%;
+    margin-top: 70px; 
 }
 
 .imagenNoticia {
@@ -101,7 +101,7 @@ button:active {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Esto garantiza que el elemento ocupe todo el ancho disponible */
+    width: 100%; 
 }
 
 .resumenNoticia {
